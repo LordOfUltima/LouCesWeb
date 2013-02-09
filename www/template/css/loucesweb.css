@@ -1,0 +1,13 @@
+@CHARSET "UTF-8";
+/**
+ * @package    LouCesWeb
+ * @subpackage CSS
+ * @author     Nikolai Plath {@link https://github.com/elkuku}
+ * @author     Created on 08-Feb-2013
+ * @license    GNU/GPL
+ */
+
+
+body {
+    padding-top: 60px;
+}

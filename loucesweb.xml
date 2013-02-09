@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="webapp" version="2.5">
+  <name>LouCesWeb</name>
+  <creationDate>08-Feb-2013</creationDate>
+  <author>Nikolai Plath</author>
+  <authorEmail>der.el.kuku@gmail.com</authorEmail>
+  <authorUrl>https://github.com/elkuku</authorUrl>
+  <copyright>C</copyright>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <version>1.0</version>
+  <description>This uses a MVC structure and a SQLite database - Uses Platform 12.1 !</description>
+  <files folder="site">
+    <folder>code</folder>
+    <folder>config</folder>
+    <folder>data</folder>
+    <folder>database</folder>
+    <folder>www</folder>
+    <filename>CHANGELOG.php</filename>
+  </files>
+</extension>
