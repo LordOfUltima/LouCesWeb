@@ -11,3 +11,20 @@
 body {
     padding-top: 60px;
 }
+
+/*body{ font: 62.5% "Trebuchet MS", sans-serif;}*/
+.ui-autocomplete-loading { background: white url('script/custom-theme/images/ui-anim_basic_16x16.gif') right center no-repeat; }
+.ui-accordion .ui-accordion-header {
+    background: none;
+}
+.ui-autocomplete {
+    max-height: 100px;
+    overflow-y: auto;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+    /* add padding to account for vertical scrollbar */
+    padding-right: 20px;
+}
+.chzn-container {
+    /*margin-left: 4px;*/
+}

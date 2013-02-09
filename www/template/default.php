@@ -49,6 +49,8 @@ $debug = JFactory::getApplication()->get('debug');
                 <ul class="nav">
                     <? $active = ('' == $do) ? ' active' : '' ?>
                     <li class="<?= $active ?>"><a href="<?= JURI::root(); ?>">Home</a></li>
+	                <? $active = ('stats' == $do) ? ' active' : '' ?>
+	                <li class="<?= $active ?>"><a href="<?= JURI::root(); ?>?do=stats">Statistics</a></li>
                     <? $active = ('list' == $do) ? ' active' : '' ?>
                     <li class="<?= $active ?>"><a href="<?= JURI::root(); ?>?do=list">LouCesWeb List</a></li>
                     <? $active = ('loucesweb' == $do) ? ' active' : '' ?>
