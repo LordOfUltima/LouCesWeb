@@ -13,3 +13,4 @@
 2013-02-09T01:48:43+00:00	ERROR	JLIB_DATABASE_QUERY_FAILED
 2013-02-09T01:48:43+00:00	ERROR	SQL: 00000, 1, no such table: prfx_loucesweb
 2013-02-09T01:48:45+00:00	ERROR	No columns found for #__loucesweb table
+2013-02-09T04:09:36+00:00	ERROR	Controller not found: stats
