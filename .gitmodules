@@ -1,0 +1,6 @@
+[submodule "libraries/joomla"]
+	path = libraries/joomla
+	url = git://github.com/joomla/joomla-platform.git
+[submodule "libraries/pchart"]
+	path = libraries/pchart
+	url = git://github.com/sebix/pChart.git
