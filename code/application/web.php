@@ -138,9 +138,9 @@ class LcesApplicationWeb extends JApplicationWeb
      * @throws RuntimeException
      * @internal param $targetApplication
      *
-     * @return \LcesConfig|mixed
+     * @return LcesConfig
      */
-    public function fetchConfigurationData($file = '', $class = 'LcesConfig')
+    public function fetchConfigurationData($file = '', $className = 'LcesConfig')
     {
         // Ensure that required path constants are defined.
         defined('JPATH_CONFIGURATION') || define('JPATH_CONFIGURATION', realpath(dirname(JPATH_BASE).'/config'));
@@ -156,7 +156,11 @@ class LcesApplicationWeb extends JApplicationWeb
 
         include_once $file;
 
-        return new $class;
+	    $config = new $className;
+
+	    JFactory::$config = new JRegistry($config);
+
+        return $config;
     }
 
     /**
