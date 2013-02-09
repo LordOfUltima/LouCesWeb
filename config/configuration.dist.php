@@ -26,4 +26,7 @@ class LcesConfig
     public $db_prefix = 'prfx_';
 
     public $debug = 1;
+
+	// The absulute path to the LouCest Bot
+	public $louCestBotPath = '';
 }
