@@ -13,7 +13,7 @@ body {
 }
 
 /*body{ font: 62.5% "Trebuchet MS", sans-serif;}*/
-.ui-autocomplete-loading { background: white url('script/custom-theme/images/ui-anim_basic_16x16.gif') right center no-repeat; }
+.ui-autocomplete-loading { background: white url('../js/custom-theme/images/ui-anim_basic_16x16.gif') right center no-repeat; }
 .ui-accordion .ui-accordion-header {
     background: none;
 }

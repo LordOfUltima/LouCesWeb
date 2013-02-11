@@ -50,7 +50,7 @@ jQuery(function($) {
     });
     // Autocomplete
     var cache = {}, lastXhr;
-    $( "#autoName" ).autocomplete({
+    $("#autoName").autocomplete({
         minLength: 2,
         source: function( request, response ) {
             var term = request.term;
@@ -58,7 +58,7 @@ jQuery(function($) {
                 response( cache[ term ] );
                 return;
             }
-            lastXhr = $.getJSON( "autocomplete.php?type=user", request, function( data, status, xhr ) {
+            lastXhr = $.getJSON( "?do=userquery", request, function( data, status, xhr ) {
                 cache[ term ] = data;
                 if ( xhr === lastXhr ) {
                     response( data );

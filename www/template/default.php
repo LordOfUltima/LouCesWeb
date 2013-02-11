@@ -27,9 +27,17 @@ $debug = JFactory::getApplication()->get('debug');
     <link href="<?= JURI::root(true); ?>/template/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="<?= JURI::root(true); ?>/template/css/loucesweb.css" rel="stylesheet">
 
-    <script src="<?= JURI::root(true); ?>/template/js/loucesweb.js" type="text/javascript"></script>
+	<link href="<?= JURI::root(true); ?>/template/js/custom-theme/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
+	<link href="<?= JURI::root(true); ?>/template/js/chosen/chosen.css" rel="stylesheet" />
 
-    <link rel="shortcut icon" href="<?= JURI::root(true); ?>/template/img/favicon.ico">
+	<script type="text/javascript" src="<?= JURI::root(true); ?>/template/js/jquery-1.6.2.min.js"></script>
+	<script type="text/javascript" src="<?= JURI::root(true); ?>/template/js/jquery-ui-1.8.16.custom.min.js"></script>
+	<script type="text/javascript" src="<?= JURI::root(true); ?>/template/js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="<?= JURI::root(true); ?>/template/js/chosen/chosen.jquery.js"></script>
+
+	<script src="<?= JURI::root(true); ?>/template/js/loucesweb.js" type="text/javascript"></script>
+
+	<link rel="shortcut icon" href="<?= JURI::root(true); ?>/template/img/favicon.ico">
 </head>
 
 <body>
@@ -49,12 +57,21 @@ $debug = JFactory::getApplication()->get('debug');
                 <ul class="nav">
                     <? $active = ('' == $do) ? ' active' : '' ?>
                     <li class="<?= $active ?>"><a href="<?= JURI::root(); ?>">Home</a></li>
+
 	                <? $active = ('stats' == $do) ? ' active' : '' ?>
-	                <li class="<?= $active ?>"><a href="<?= JURI::root(); ?>?do=stats">Statistics</a></li>
-                    <? $active = ('list' == $do) ? ' active' : '' ?>
+	                <li class="<?= $active ?>"><a href="<?= JURI::root(); ?>?do=stats">Statistiken</a></li>
+
+                    <? $active = ('alliance' == $do) ? ' active' : '' ?>
+	                <li class="<?= $active ?>"><a href="<?= JURI::root(); ?>?do=alliance">Allianz</a></li>
+
+	                <!--
+	                <? $active = ('list' == $do) ? ' active' : '' ?>
                     <li class="<?= $active ?>"><a href="<?= JURI::root(); ?>?do=list">LouCesWeb List</a></li>
+
                     <? $active = ('loucesweb' == $do) ? ' active' : '' ?>
                     <li class="<?= $active ?>"><a href="<?= JURI::root(); ?>?do=loucesweb">New LouCesWeb</a></li>
+                    -->
+
                     <? $active = ('log' == $do) ? ' active' : '' ?>
                     <li class="<?= $active ?>"><a href="<?= JURI::root(); ?>?do=log">Log</a></li>
                 </ul>

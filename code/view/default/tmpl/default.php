@@ -13,7 +13,6 @@ defined('_JEXEC') || die('=;)');
 
 ?>
 <h1>LouCesWeb</h1>
-<p>Welcome <tt>=;)</tt> ...</p>
-<p class="alert alert-block">Please remember to <a href="index.php?do=install">install the database</a> for the first
-    time !</p>
+<h4 class="alert alert-block">Stark im Aufbau <tt><a href="index.php?do=install">=;)</a></tt></h4>
+
 

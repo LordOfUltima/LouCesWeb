@@ -7,7 +7,7 @@
  * @license    GNU/GPL
  */
 
-// Set the Joomla execution flag.
+// Set the Joomla! execution flag.
 define('_JEXEC', 1);
 
 version_compare(PHP_VERSION, '5.3', '>=') || die('This script requires PHP >= 5.3');
