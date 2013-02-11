@@ -55,11 +55,13 @@ $debug = JFactory::getApplication()->get('debug');
 
             <div class="nav-collapse">
                 <ul class="nav">
-                    <? $active = ('' == $do) ? ' active' : '' ?>
-                    <li class="<?= $active ?>"><a href="<?= JURI::root(); ?>">Home</a></li>
+                    <? $active = ('' == $do || 'stats' == $do) ? ' active' : '' ?>
+                    <li class="<?= $active ?>"><a href="<?= JURI::root(); ?>">Statistiken</a></li>
 
+	                <!--
 	                <? $active = ('stats' == $do) ? ' active' : '' ?>
 	                <li class="<?= $active ?>"><a href="<?= JURI::root(); ?>?do=stats">Statistiken</a></li>
+	                -->
 
                     <? $active = ('alliance' == $do) ? ' active' : '' ?>
 	                <li class="<?= $active ?>"><a href="<?= JURI::root(); ?>?do=alliance">Allianz</a></li>
@@ -72,8 +74,10 @@ $debug = JFactory::getApplication()->get('debug');
                     <li class="<?= $active ?>"><a href="<?= JURI::root(); ?>?do=loucesweb">New LouCesWeb</a></li>
                     -->
 
+	                <!--
                     <? $active = ('log' == $do) ? ' active' : '' ?>
                     <li class="<?= $active ?>"><a href="<?= JURI::root(); ?>?do=log">Log</a></li>
+	                -->
                 </ul>
             </div>
             <?php if($debug) : ?>

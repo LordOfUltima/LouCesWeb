@@ -11,7 +11,7 @@
 defined('_JEXEC') || die('=;)');
 
 ?>
-<h1>Statistiken</h1>
+<h2>Statistiken</h2>
 
 <form method="post" action="index.php?do=stats" name="form" id="target" class="form-search">
 	<div id="autocompleter" class="row well well-small">

@@ -7,7 +7,7 @@
 
 ?>
 
-<h1><?= sprintf('Allianz: %1$s (%2$s)', $this->alliance['name'], $this->alliance['short']) ?></h1>
+<h2><?= sprintf('Allianz: %1$s (%2$s)', $this->alliance['name'], $this->alliance['short']) ?></h2>
 
 <div class="row row-fluid">
 	<div class="span6 well alert">
